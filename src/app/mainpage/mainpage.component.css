@@ -1,0 +1,44 @@
+.access {
+  margin: 25% 400px;
+  text-align: center;
+}
+.token {
+	width: 400px;
+}
+
+.search {
+  
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+}
+input {
+  flex: 3
+}
+
+.result_count {
+	margin-top: 30px;
+}
+
+
+ul {
+  margin: 0px auto;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+}
+img {
+	 height: 100px;
+  width: 100px;
+  border-right: 20px solid transparent;
+
+}
+
+li {
+  float: right;
+  margin-top: 40px;
+  list-style-type: none;
+}
+p {
+  margin-top: 0px;
+} 

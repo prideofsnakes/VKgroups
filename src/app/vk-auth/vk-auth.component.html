@@ -1,0 +1,8 @@
+<div>
+<button><a href="https://oauth.vk.com/authorize?client_id=7332043&display=popup&redirect_uri=http://localhost:4200/mainpage&scope=groups&response_type=token&v=5.103&state=123456">Войти через oauth.vk</a></button><br>		
+  или <br>
+<button class="alt" [routerLink]="['/login']">Попробовать несложную авторизацию на этом "типа"-сайте</button>
+<br>		
+  или <br>
+<button class="alt" [routerLink]="['/mainpage']">Попробовать получить список групп ВК без авторизации ВК (потребуется ввести access_token: не переживайте, я его сгенерирую на сутки и пришлю отдельно)</button>  
+</div>

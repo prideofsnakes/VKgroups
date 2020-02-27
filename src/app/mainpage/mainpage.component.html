@@ -1,0 +1,21 @@
+<button [routerLink]="['/']">Назад</button>
+<div class="access"  *ngIf = "!access_token">
+<input class="token" type="text" [(ngModel)]="access_token">
+<p><b>Введите access_token (копируется из адресной строки браузэра или уточняется у администратора)</b><p>
+</div>
+
+<div class="search" *ngIf = "access_token">
+<input type="text" [(ngModel)]="query" (keyup.enter)="getResponse()">
+<button (click)="getResponse()">Найти группу</button>
+</div>
+
+	<ul class="groupInfo" [hidden]="result.length==0" *ngFor="let group of result">
+	<li>
+	<img [attr.src]='group["photo_100"]' alt="" align="left">
+	<p><a [href]="'https://vk.com/' + group.screen_name" target="_blank">{{group.name}}</a></p>
+	{{group.description.slice(0,500) || "Описание отсутствует"}}
+	</li>
+	</ul>
+
+
+  

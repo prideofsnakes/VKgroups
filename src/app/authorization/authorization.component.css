@@ -1,0 +1,27 @@
+form {
+	max-width: 500px;
+	margin: 220px auto;
+	border: 2px solid black;
+	padding: 20px 30px;
+	text-align: center;
+
+}
+div {
+	padding-top: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+input {
+	width: 300px;
+	margin-top: 15px;
+}
+button {
+	margin-top: 10px;
+}
+.wrong {
+	color: red;
+}
+small {
+	margin-top: 10px;
+}

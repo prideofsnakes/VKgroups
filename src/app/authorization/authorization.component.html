@@ -1,0 +1,16 @@
+<button [routerLink]="['/']">Назад</button>
+<form [formGroup]="form" (ngSubmit)="submit()">
+	<h2>Авторизоваться</h2>
+
+	<div>
+		<label for="email" >Введите емайл:</label><br>
+		<input id="email" type="email" formControlName="email">
+	</div>
+	<div>
+		<label for="password" >Введите пароль:</label><br>
+		<input id="password" type="password" formControlName="password">
+		<small class="wrong" *ngIf="auth.error$ | async as error">{{error}}</small>
+	</div>
+
+	<button type="submit" [disabled]="form.invalid">Войти</button>
+</form>
