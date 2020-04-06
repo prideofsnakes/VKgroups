@@ -22,7 +22,7 @@ export class AuthBackendService {
   constructor(private http : HttpClient) { }
 
   login (user) : Observable<any> {
-  	return this.http.post(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCT-QlIw61_1MHUabecydDpjdHDsuLqWlE`, user)
+  	return this.http.post(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=<API KEY>`, user)
   	.pipe(tap(this.setToken), catchError(this.showError.bind(this)));
   }
 
